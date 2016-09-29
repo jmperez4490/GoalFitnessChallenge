@@ -1,0 +1,12 @@
+.banner-image
+{
+	height: 100%;
+	width:100%;
+	z-index: -1;
+}
+
+.img-logo
+{
+	height:50px;
+	float:left;
+}

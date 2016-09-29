@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitness, Goal, and Challenge Yourself</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap-theme.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "CSS/font_style.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "CSS/image_style.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "CSS/general_style.css" %}">
+	<script type="text/javascript" src ="{% static "JavaScript/JQuery.js" %}"></script>
+	<script type="text/javascript" src ="{% static "JavaScript/onload_script.js" %}"></script>
+</head>
+<body>
+	<div class = 'container-fluid'>
+		<div class = 'row'>
+			<div class = 'col-xs-12'>
+				<nav class = 'navbar'>
+					<div class="container-fluid">
+						<div class = 'navbar-left'>
+							<img src="{% static "Images/LOGO.svg" %}" class = 'img-logo'>
+							<h5 class = 'header hidden-xs'>
+								Strive to be Fit, Set a Goal, and Challenge Yourself!!!
+							</h5>
+						</div>
+					</div>
+				</nav>
+				<img src="{% static "Images/JOSE.svg" %}" class = 'banner-image'>
+			</div>
+		</div>
+		<div class = 'row'>
+			<div class = 'col-sm-2 hidden-xs menu-list-group'>
+				<div class="list-group">
+					<a href="#">
+						Running
+					</a>
+					<a href="#">
+						Hiking
+					</a>
+					<a href="#">
+						Group Exercising
+					</a>
+					<a href="#">
+						Cycling
+					</a>
+					<a href="#">
+						Nutrition
+					</a>
+					<a href="#">
+						Exploration
+					</a>
+				</div>
+			</div>
+			<div class = 'col-md-10'>
+				<!-- <div class = 'col-sm-6 intro-blog' style = 'background-color: #80ff80;'>
+					<h6 class = 'intro-blog-header'>
+						Why is it Important to Monitor Your Heart Rate While Working Out?
+					</h6>
+					<div>
+						<p>
+							The heart is one of the most crucial parts of the body and it communicates a lot about how we are feeling and if you are working out to your maximum potential. It is important to listen to it, especially when you’re putting strain on your body, such as exercising. But what exactly do you need to know and do for monitoring your heart rate?
+						</p>
+						<ul>
+							<li>
+								Know your resting heart rate. This is the rate at which your heart normally beats when you aren’t working out and can affect what your target heart rate is.
+							</li>
+							<li>
+								Know your target heart rate. This is the heart rate you are trying to reach in your workout.
+							</li>
+							<li>
+								Your target heart rate depends on several factors, age being one of them. The older you are, the lower your target heart rate will be. A specific list can be found <a href = “http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/target-Heart-Rate_UCM_434341_Article.jsp#mainContent”>here</a>.
+							</li>
+							<li>
+								There are multiple ways to monitor your heart rate. One of them is through the exercise machine, another way is checking your pulse at your wrist or throat.
+							</li>
+						</ul>
+						<p>
+							Listening to your heart rate while you work out is extremely important, not only to optimize your workout, but to keep you safe as well. One of the keys to exercise and staying healthy is to listen to your body.
+						</p>
+					</div>
+				</div>
+				<div class = 'col-sm-6 intro-blog' style = 'background-color: #b3e0ff;'>
+					<h6 class = 'intro-blog-header'>
+						Are You Considering Cycling For Regular Fitness?
+					</h6>
+					<div>
+						<p>
+							Cycling is one of those activities that most of us enjoyed when we were younger, but for whatever reason we stopped. So naturally it springs to mind when we're wondering which sport should make up the bulk of our new fitness routine. And it's an excellent choice for many reasons. Personally I enjoy the extended time outdoors that a good cycling session provides, not to mention the unmistakable feeling of giving your legs a solid workout. But you might gain totally different benefits from cycling, like some of the following . .
+						</p>
+						<ul>
+							<li>Increased muscle strength and stamina.</li>
+							<li>Especially in your legs.</li>
+							<li>Precise coordination and faster reflexes.</li>
+							<li>More energy for all activities in your life.</li>
+							<li>A calmer mind.</li>
+							<li>Deeper, longer sleeps.</li>
+							<li>Hours of fresh air and constantly changing scenery.</li>
+							<li>The ability to explore interesting locations at the drop of a hat.</li>
+							<li>Greatly increased cardiovascular fitness.</li>
+							<li>And the opportunity to join your local cycling club.</li>
+						</ul>
+						<p>
+							One practical benefit that cycling has over other endurance sports is it features very little wear and tear on your joints, especially the knees and hips. So, if you do decide to choose cycling to attain your personal fitness goals, you'll find an absolute goldmine of technical tips, tricks and diet advice online. Both in written form on high quality cycling sites, and on the many YouTube instructional videos that exist. Right now is a great time to start, thanks for reading and good luck.
+						</p>
+					</div>
+				</div> -->
+				<!-- <div class = 'col-sm-6 intro-blog' style = 'background-color: #ffd480'>
+					<h6 class = 'intro-blog-header'>
+						The Best Things About Group Exercise
+					</h6>
+					<div>
+						<p>
+							Everyone feels better when they're in great shape. This is as true for the pro athlete who's just had a holiday, as it is for the person who's never worked out before and just wants to drop a few pounds. Setting yourself a fitness goal and pushing towards greater stamina and strength rewards you with solid benefits right now, benefits you can feel, see and touch, on the most vital thing you'll ever own. Your body.
+						</p>
+						<p>
+							We all know there are good and bad ways to achieve a desired result. And group exercise has been scientifically shown to be superior to working out alone [not to mention more fun]. Here are some of the main perks of group workouts . .
+						</p>
+						<ul>
+							<li>
+								Many professionally established group fitness programs already exist.
+							</li>
+							<li>
+								Like aerobics, spin class, Pilates, Yoga, MMA, dance, and many more.
+							</li>
+							<li>
+								They usually have a tried and tested path to Your fitness goals.
+							</li>
+							<li>
+								And you don't need previous experience to start.
+							</li>
+							<li>
+								Learning new techniques maintains your mental edge.
+							</li>
+							<li>
+								And gives you a great place to build from.
+							</li>
+							<li>
+								You'll learn faster than going it alone.
+							</li>
+							<li>
+								Group training exposes you to a positive social environment.
+							</li>
+						</ul>
+						<p>
+							Lastly, boredom is a common reason for quitting a new fitness routine, and this drop off is greatly reduced in group workouts. Not to mention the social benefits, which include camaraderie, group motivation, fun and even some friendly competition. Thanks for reading, and good luck with your fitness goals!
+						</p>
+					</div>
+				</div>
+				<div class = 'col-sm-6 intro-blog'>
+					<h6 class = 'intro-blog-header'>
+					</h6>
+					<div>
+						
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+.col-xs-12
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navbar
+{
+	position: fixed;
+	width: 100%;
+}
+.col-sm-6
+{
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+
+.intro-blog
+{
+	/*height: 200px;
+	overflow: hidden;*/
+	opacity: .7;
+}
+
+.intro-blog:hover
+{
+	opacity: 1;
+}
+
+.intro-blog-header
+{
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	margin-top:20px;
+}
+
+.intro-blog > div
+{
+	padding:20px;
+}
+
+.blog-eye-catcher > h4
+{
+	border:1px solid;
+	padding:40px;
+	border-radius:40px;
+}
+
+.blog-eye-catcher > h4
+{
+	text-align: center;
+}
+
+.list-group > a
+{
+	width:100%;
+	display:block;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:5px;
+	border-bottom:1px solid;
+}
+
+.menu-list-group
+{
+	padding-left: 0px !important;
+}
