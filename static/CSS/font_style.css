@@ -1,7 +1,5 @@
-.header
+body
 {
-	float:left;
-	text-align: center;
 	font-family: 	Trebuchet MS,
 					Lucida Grande,
 					Lucida Sans Unicode,
@@ -9,4 +7,10 @@
 					Tahoma,
 					sans-serif;
 	font-style: oblique;
+}
+
+.header
+{
+	float:left;
+	text-align: center;
 }

@@ -4,4 +4,6 @@ from . import views
 
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
+	url(r'^Log-In/',views.logIn),
+	url(r'^[A-Za-z]+-?[A-Za-z]+/',views.blog),
 ]

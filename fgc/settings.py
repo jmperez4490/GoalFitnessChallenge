@@ -73,16 +73,16 @@ WSGI_APPLICATION = 'fgc.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fit_goal_challenge',
-        'USER':'root',
-        'PASSWORD':'localuser',
-        'HOST':'localhost',
-        'PORT':'',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mysql.connector.django',
+#         'NAME': 'fit_goal_challenge',
+#         'USER':'root',
+#         'PASSWORD':'',
+#         'HOST':'localhost',
+#         'PORT':'',
+#     }
+# }
 
 
 # Password validation
