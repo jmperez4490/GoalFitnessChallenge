@@ -25,6 +25,11 @@
 							</h5>
 						</div>
 						<div class = 'right-banner'>
+							<div class = 'hidden-xs'>
+								<a href = 'http://{{request.get_host}}/'>
+									Home
+								</a>
+							</div>
 							<!--div class = 'hidden-xs'>
 								<span class = 'glyphicon glyphicon-user'></span>
 								<a href = 'http://{{request.get_host}}/Log-In/'>
@@ -32,7 +37,6 @@
 								</a>
 							</div-->
 							<div class = 'visible-xs-block'>
-								
 								<div class="dropdown">
 									<div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<span class = 'glyphicon glyphicon-th-list'></span>
@@ -41,31 +45,6 @@
 									<ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
 										<li>
 											<a href = 'http://{{request.get_host}}/Running/'>
-												Running
-											</a>
-										</li>
-										<li>
-											<a href = 'http://{{request.get_host}}/Hiking/'>
-												Hiking
-											</a>
-										</li>
-										<li>
-											<a href="http://{{request.get_host}}/Group-Exercising/">
-												Grooup Exercising
-											</a>
-										</li>
-										<li>
-											<a href="http://{{request.get_host}}/Cycling/">
-												Cycling
-											</a>
-										</li>
-										<li>
-											<a href="http://{{request.get_host}}/Nutrition/">
-												Nutrition
-											</a>
-										</li>
-										<li>
-											<a href="http://{{request.get_host}}/">
 												Home
 											</a>
 										</li>
@@ -89,39 +68,55 @@
 				<img src="{% static "Images/JOSE.svg" %}" class = 'banner-image'>
 			</div>
 		</div>
-		<div class = 'row hidden-xs '>
-			<div class = 'col-sm-2 menu-list-group'>
-				<div class="list-group">
-					<a href="http://{{request.get_host}}/Running/">
-						Running
-					</a>
-					<a href="http://{{request.get_host}}/Hiking/">
-						Hiking
-					</a>
-					<a href="http://{{request.get_host}}/Group-Exercising/">
-						Group Exercising
-					</a>
-					<a href="http://{{request.get_host}}/Cycling/">
-						Cycling
-					</a>
-					<a href="http://{{request.get_host}}/Nutrition/">
-						Nutrition
-					</a>
-					<a href="http://{{request.get_host}}/">
-						Home
-					</a>
+		<div class = 'row'>
+			<div class="col-sm-12 content-post">
+				<div class="row">
+					<div class="col-sm-3 hidden-xs">
+					</div>
+					<div class="col-sm-8 content-text">
+						<h3>Determining Your Heart Rate in a Workout</h3>
+						<p>
+							The heart is one of the most crucial parts of the body and it communicates a lot about how we are feeling and if you are working out to your maximum potential. It is important to listen to it, especially when you’re putting strain on your body, such as exercising. But what exactly do you need to know and do for monitoring your heart rate? 
+						</p>
+						<ul>
+							<li>
+								<b>
+									Know your resting heart rate.
+								</b>
+								<ul> 
+									It is at which your heart normally beats when you aren’t working out and can help determine what your target heart rate is.
+								</ul>
+							</li>
+							<li>
+								<b>
+									Know your target heart rate.
+								</b>
+								<ul> 
+									This is the heart rate you are trying to reach in your workout, if it is too low, then you aren’t working hard enough, too high and you might be pushing yourself too far.
+								</ul>
+							</li>
+							<li>
+								<b>
+									Factors that determine your target heart rate
+								</b>
+								<ul> 
+									age being one of them. The older you are, the lower your target heart rate will be because the less your body is able to do. A specific list can be found here.
+								</ul> 
+							</li>
+							<li>
+								<b>
+									Ways in monitoring your heart rate
+								</b>
+								<ul>
+									You can take your heart rate with a monitor connected to the exercise machine, checking your pulse at your wrist or throat, or even through physical symptoms during your workout.
+								</ul>
+							</li>
+						</ul>
+						<p>
+							Listening to your heart rate while you work out is extremely important, not only to optimize your workout, but to keep you safe as well. One of the keys to exercise and staying healthy is to listen to your body.
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class = 'col-sm-7 content-post'>
-				
-			</div>
-			<div class = 'col-sm-2 alternative-articles'>
-				<h4>Top 5 Articles</h4>
-			</div>
-		</div>
-		<div class = 'row visible-xs-block'>
-			<div class = 'col-xs-1 col-xs-10'>
-				
 			</div>
 		</div>
 	</div>
