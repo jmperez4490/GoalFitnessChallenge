@@ -5,9 +5,8 @@ def index(request):
 	context = {}
 	return render(request, 'fitness/index.html',context)
 
-def blog(request):
-	path = request.get_full_path()
-	path = clean_array(path.split('/'))
+def blog_article(request,text):
+	print text
 	context = {}
 	return render(request, 'fitness/blog.html',context)
 

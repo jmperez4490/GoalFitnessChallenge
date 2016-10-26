@@ -181,3 +181,28 @@ body
 {
 	padding: 10px;
 }
+
+.blog-intro
+{
+	margin-top:30px;
+	padding-left:5%;
+}
+
+.information-text
+{
+	opacity: 0;
+	position:absolute;
+	top:0px;
+	padding:7%;
+}
+
+.information-text:hover
+{
+	opacity: 1;
+	background-color: white;
+}
+
+.information-text > h4
+{
+	text-align: center;
+}
