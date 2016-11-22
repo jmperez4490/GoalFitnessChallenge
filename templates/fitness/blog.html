@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Fitness, Goal, and Challenge Yourself</title>
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap-theme.css" %}">
@@ -44,7 +45,7 @@
 									</div>
 									<ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
 										<li>
-											<a href = 'http://{{request.get_host}}/Running/'>
+											<a href = 'http://{{request.get_host}}/'>
 												Home
 											</a>
 										</li>
@@ -64,56 +65,43 @@
 	</div>
 	<div class = 'container'>
 		<div class = 'row'>
-			<div class = 'col-xs-12' style = 'z-index: -1'>
-				<img src="{% static "Images/JOSE.svg" %}" class = 'banner-image'>
+			<div class = 'col-xs-12 article-image-container'>
+				<img src="{{request.scheme}}://{{ request.get_host }}/{{data.0.image}}" class = 'article-image' alt = "Image for {{data.0.title}}">
+				<h1 class = 'article-title'>{{data.0.title}}</h1>
+				{% if data.0.image_credit != "" %}
+					<p class = 'img-credit'>
+						Credit: {{data.0.image_credit}}
+					</p>
+				{% endif %}
 			</div>
 		</div>
 		<div class = 'row'>
 			<div class="col-sm-12 content-post">
 				<div class="row">
 					<div class="col-sm-3 hidden-xs">
+						<h4 style = 'text-align:center'>Next Ridings</h4>
+						{% for blogs in blog_list %}
+							<div class = 'article-list' >
+								<a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{blogs.uri}}/'>
+									<h6>{{blogs.title}}</h6>
+								</a>
+							</div>
+						{% endfor %}
 					</div>
-					<div class="col-sm-8 content-text">
-						<h3>Determining Your Heart Rate in a Workout</h3>
-						<p>
-							The heart is one of the most crucial parts of the body and it communicates a lot about how we are feeling and if you are working out to your maximum potential. It is important to listen to it, especially when you’re putting strain on your body, such as exercising. But what exactly do you need to know and do for monitoring your heart rate? 
-						</p>
-						<div class = 'row'>
-							<div class = 'col-sm-4'>
-								<img src="{% static "Images/upload_images/heart_rate.svg" %}" class = "img-thumbnail">
+					<div class="col-sm-8 col-xs-12 content-text">
+						{{data.0.body | safe}}
+						<p><u>Posted: {{data.0.timestamp}}</u></p>
+					</div>
+
+					<div class = 'col-xs-12 visible-xs'>
+						<h5>Next Readings</h5>
+						{% for blogs in blog_list %}
+							<div class = 'article-list' >
+								<a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{blogs.uri}}/'>
+									<h6>{{blogs.title}}</h6>
+								</a>
 							</div>
-							<div class = 'col-sm-8'>
-								<ul>
-									<li>
-										<b>
-											Know your resting heart rate.
-										</b>
-										<ul> 
-											It is at which your heart normally beats when you aren’t working out and can help determine what your target heart rate is.
-										</ul>
-									</li>
-									<li>
-										<b>
-											Know your target heart rate.
-										</b>
-										<ul> 
-											This is the heart rate you are trying to reach in your workout, if it is too low, then you aren’t working hard enough, too high and you might be pushing yourself too far.
-										</ul>
-									</li>
-									<li>
-										<b>
-											Ways in monitoring your heart rate
-										</b>
-										<ul>
-											You can take your heart rate with a monitor connected to the exercise machine, checking your pulse at your wrist or throat, or even through physical symptoms during your workout.
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p>
-							Listening to your heart rate while you work out is extremely important, not only to optimize your workout, but to keep you safe as well. One of the keys to exercise and staying healthy is to listen to your body.
-						</p>
+						{% endfor %}
 					</div>
 				</div>
 			</div>

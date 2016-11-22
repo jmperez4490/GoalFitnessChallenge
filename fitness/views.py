@@ -1,30 +1,21 @@
 from django.shortcuts import render
+from Python_Classes.request_info import request_info
+
+db_connect = request_info()
 
 # Create your views here.
 def index(request):
-	context = {}
+	context = dict(
+			data = db_connect.get_top_blogs()
+		)
 	return render(request, 'fitness/index.html',context)
 
 def blog_article(request,text):
-	print text
-	context = {}
-	return render(request, 'fitness/blog.html',context)
+	context = dict( 
+			data = db_connect.get_blog(text),
+			blog_list = db_connect.get_blog_list(text)
+		)
+	return render(request, 'fitness/blog.html',context, content_type = 'text/html')
 
 def logIn(request):
-	context = {}
 	return render(request, 'fitness/logIn.html', context)
-
-def clean_array(path, index = 0):
-	if path[index] == "":
-		del path[index]
-		index = index + 1
-		if len(path) > 1:
-			return clean_array(path, index)
-		else:
-			return path
-	else:
-		index = index + 1
-		if len(path) < index:
-			return clean_array(path, index)
-		else:
-			return path

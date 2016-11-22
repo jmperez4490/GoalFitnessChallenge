@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,38 +103,25 @@
 				</div>
 			</div>
 		</div>
+		<h3 class = 'banner-headers'>
+			Articles
+		</h3>
 		<div class = 'row'>
-			<a class = 'col-sm-4 blog-intro' href = './determining-your-heart-rate-in-a-workout/'>
-				<img src="{% static "Images/upload_images/heart_rate.jpeg" %}" class = "img-thumbnail">
-				<div class = 'information-text'>
-					<h4>Determining Your Heart Rate in a Workout</h4>
-					<p>
-						The heart is one of the most crucial parts of the body and it communicates a lot about how we are feeling and if you are working out to your maximum potential. It is important to listen to it, especially when you’re putting strain on your body, such as exercising. But what exactly do you need to know and do for monitoring your heart rate?
-					</p>
-				</div>
-			</a>
-			<div class = 'col-sm-4 blog-intro'>
-				<img src="{% static "Images/upload_images/heart_rate.jpeg" %}" class = "img-thumbnail">
-			</div>
-			<div class = 'col-sm-4 blog-intro'>
-				<img src="{% static "Images/upload_images/heart_rate.jpeg" %}" class = "img-thumbnail">
-			</div>
-			<a class = 'col-sm-4 blog-intro' href = './determining-your-heart-rate-in-a-workout/'>
-				<img src="{% static "Images/upload_images/heart_rate.jpeg" %}" class = "img-thumbnail">
-				<div class = 'information-text'>
-					<h4>Determining Your Heart Rate in a Workout</h4>
-					<p>
-						The heart is one of the most crucial parts of the body and it communicates a lot about how we are feeling and if you are working out to your maximum potential. It is important to listen to it, especially when you’re putting strain on your body, such as exercising. But what exactly do you need to know and do for monitoring your heart rate?
-					</p>
-				</div>
-			</a>
-			<div class = 'col-sm-4 blog-intro'>
-				<img src="{% static "Images/upload_images/heart_rate.jpeg" %}" class = "img-thumbnail">
-			</div>
-			<div class = 'col-sm-4 blog-intro'>
-				<img src="{% static "Images/upload_images/heart_rate.jpeg" %}" class = "img-thumbnail">
-			</div>
+			{% for article in data%}
+				<a class = 'col-sm-4 blog-intro' href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{article.uri}}/'>
+					<div class = 'information-text' id = '{% cycle 'left-top' 'middle-top' 'right-top' 'left-bottom' 'middle-bottom' 'right-bottom' %}' style = 'background: url({{request.scheme}}://{{ request.get_host }}/{{article.image}});background-size:100%' >
+						<h4>{{article.title}}</h4>
+						<p>
+							{{article.summary}}
+						</p>
+						<div class = 'posted-date'><h5>Posted: <medium>{{article.timestamp}}</medium></h5></div>
+					</div>
+				</a>
+			{% endfor %}
 		</div>
+		<h3 class = 'banner-headers'>
+			Hiking Adventures
+		</h3>
 		<div class = 'row'>
 			<div class = 'col-sm-12 footer'>
 				Fitness, Goal & Challenge &copy; (2016-2017) 
