@@ -19,3 +19,7 @@ class Pymongo_connection():
 			_info['_id'] = str(_info['_id'])
 			_data.append(_info)
 		return _data
+
+	def insert_record(self, collection, table, data):
+		db = self.client[collection][table]
+		print db.insert(data)
