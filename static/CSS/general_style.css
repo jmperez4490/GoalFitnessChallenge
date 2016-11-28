@@ -305,3 +305,36 @@ a
 	border-bottom: 1px solid;
 	box-shadow: 10px 10px 5px #888888;
 }
+
+
+.subscription-confirm
+{
+	position:absolute;
+	height:300px;
+	width:70%;
+	background-color:white;
+	top:15%;
+	left:15%;
+	opacity:.9;
+	border-radius:20px;
+	text-align:center;
+}
+
+.subscription-confirm > div > button
+{
+	font-size:15px;
+	min-width: 100px;
+}
+
+.subscription-small
+{
+	background-color: #FFFFFF;
+	padding: 20px;
+}
+
+.subscription-small > div > button
+{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+}

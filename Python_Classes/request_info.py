@@ -38,3 +38,6 @@ class request_info:
 		]
 		return self.db.search_database("Articles_List", "Articles", _data)
 
+	def register_reader(self, information):
+		self.db.insert_record("Articles_List","Newsletter",information)
+
