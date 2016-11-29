@@ -1,12 +1,14 @@
 from Pymongo_connection import Pymongo_connection
-
+from datetime import datetime
 class request_info:
 	def __init__(self):
 		self.db = Pymongo_connection()
 
 	def get_top_blogs(self):
 		_data = [
-			{},
+			{
+				"timestamp":{"$lte":datetime.utcnow()}
+			},
 			{
 				"title":1,
 				"summary":1,
@@ -29,7 +31,12 @@ class request_info:
 	def get_blog_list(self,text):
 		_data = [
 			{
-				"uri":{"$ne":text}
+				"uri":{
+					"$ne":text
+				},
+				"timestamp":{
+					"$lte":datetime.utcnow()
+				}
 			},
 			{
 				"title":1,
