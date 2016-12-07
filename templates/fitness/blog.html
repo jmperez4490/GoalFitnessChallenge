@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fitness, Goal, and Challenge Yourself &mdash; Conquering A Hill</title>
+	<title>Fitness, Goal, and Challenge Yourself</title>
 	{% load static %}
 	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap-theme.css" %}">
 	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap.css" %}">
@@ -28,6 +28,16 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1810383789250744";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<div class = 'container-fluid'>
 		<div class = 'row'>
 			<div class = 'col-xs-12'>
@@ -53,8 +63,8 @@
 							</div-->
 							<div class = 'visible-xs-block'>
 								<div class="dropdown">
-									<button id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class = 'btn'>
-										<span class = 'glyphicon glyphicon-menu-hamburger'></span>
+									<button id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class = 'glyphicon glyphicon-th-list'></span>
 									</button>
 									<ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
 										<li>
@@ -80,7 +90,7 @@
 		<div class = 'row'>
 			<div class = 'col-xs-12 article-image-container'>
 				<img src="{{request.scheme}}://{{ request.get_host }}/{{data.0.image}}" class = 'article-image' alt = "Image for {{data.0.title}}">
-				<h1 class = 'article-title'>{{data.0.title}}</h1>
+				<h3 class = 'article-title'>{{data.0.title | safe}}</h3>
 				{% if data.0.image_credit != "" %}
 					<p class = 'img-credit'>
 						Credit: {{data.0.image_credit}}
@@ -96,10 +106,11 @@
 						{% for blogs in blog_list %}
 							<div class = 'article-list' >
 								<a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{blogs.uri}}/'>
-									<h6>{{blogs.title}}</h6>
+									<h6>{{blogs.title | safe}}</h6>
 								</a>
 							</div>
 						{% endfor %}
+						<div class="fb-like" data-href="https://www.facebook.com/conqueringahill/"  style = 'margin-top:20px'data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 					</div>
 					<div class="col-sm-8 col-xs-12 content-text">
 						{{data.0.body | safe}}
@@ -111,7 +122,7 @@
 						{% for blogs in blog_list %}
 							<div class = 'article-list' >
 								<a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{blogs.uri}}/'>
-									<h6>{{blogs.title}}</h6>
+									<h6>{{blogs.title | safe}}</h6>
 								</a>
 							</div>
 						{% endfor %}

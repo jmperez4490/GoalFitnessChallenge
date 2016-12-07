@@ -123,18 +123,15 @@
 			{% for article in data%}
 				<a class = 'col-sm-4 blog-intro' href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{article.uri}}/'>
 					<div class = 'information-text' id = '{% cycle 'left-top' 'middle-top' 'right-top' 'left-bottom' 'middle-bottom' 'right-bottom' %}' style = 'background: url({{request.scheme}}://{{ request.get_host }}/{{article.image}});background-size:cover;' >
-						<h4>{{article.title}}</h4>
+						<h4>{{article.title | safe}}</h4>
 						<p>
-							{{article.summary}}
+							{{article.summary | safe}}
 						</p>
 						<div class = 'posted-date'><h5>Posted: <medium>{{article.timestamp}}</medium></h5></div>
 					</div>
 				</a>
 			{% endfor %}
 		</div>
-		<h3 class = 'banner-headers'>
-			Hiking Adventures
-		</h3>
 		<div class = 'row'>
 			<div class = 'col-sm-12 footer'>
 				Fitness, Goal & Challenge &copy; (2016-2017) 

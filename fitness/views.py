@@ -7,14 +7,14 @@ db_connect = request_info()
 # Create your views here.
 def index(request):
 	context = dict(
-			data = db_connect.get_top_blogs()
+			data = db_connect.get_top_blogs(6)
 		)
 	return render(request, 'fitness/index.html',context)
 
 def blog_article(request,text):
 	context = dict( 
 			data = db_connect.get_blog(text),
-			blog_list = db_connect.get_blog_list(text)
+			blog_list = db_connect.get_blog_list(text,6)
 		)
 	return render(request, 'fitness/blog.html',context, content_type = 'text/html')
 
