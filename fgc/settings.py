@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qt^r8g@m5_4$%o5$pk4w!lh%xbkw2ou2!64%67wad64@^nma8w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -127,7 +127,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
     )
 
-MONGODB_CONFIG = 'mongodb://localhost:27017' #'mongodb://root:BTExjh5R@104.154.150.130:27017'
+MONGODB_CONFIG = 'mongodb://root:BTExjh5R@104.154.150.130:27017'
 
 
 
