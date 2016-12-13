@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile &mdash; Conquering A Hill</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap-theme.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "CSS/font_style.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "CSS/image_style.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "CSS/general_style.css" %}">
+	<script type="text/javascript" src ="{% static "JavaScript/JQuery.js" %}"></script>
+	<script type="text/javascript" src ="{% static "JavaScript/onload_script.js" %}"></script>
+	<script type="text/javascript" src ="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+	{% if request.get_host != "localhost:8000" or request.get_host != "127.0.0.1:8000" %}
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-86706311-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	{% endif %}
+</head>
+<body>
+	<div class = 'container-fluid'>
+		<div class = 'row'>
+			<div class = 'col-xs-12'>
+				<nav class = 'navbar'>
+					<div class="container-fluid">
+						<div class = 'navbar-left'>
+							<img src="{% static "Images/LOGO.svg" %}" class = 'img-logo'>
+							<h5 class = 'header hidden-xs'>
+								Strive to be Fit, Set a Goal, and Challenge Yourself!!!
+							</h5>
+						</div>
+						<div class = 'right-banner'>
+							<div class = 'hidden-xs'>
+							</div>
+							<div class = 'visible-xs-block'>
+								<div class="dropdown">
+									<button class = 'btn' id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class = 'glyphicon glyphicon-menu-hamburger'></span>
+									</button>
+									<ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+										<!--li>
+											<a href = 'http://{{request.get_host}}/Log-In/'>
+												Log In / Register
+											</a>
+										</li-->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class = 'row hidden-xs '>
+			<div class = 'col-sm-offset-1 col-sm-10' style = 'border: 1px solid;margin-top: 80px;'>
+			</div>
+		</div>
+		<div class = 'row visible-xs-block'>
+			
+		</div>
+		<div class = 'row'>
+			<div class = 'col-sm-12 footer'>
+				Fitness, Goal & Challenge &copy; (2016-2017) 
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

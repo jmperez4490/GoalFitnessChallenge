@@ -121,15 +121,15 @@
 		</h3>
 		<div class = 'row'>
 			{% for article in data%}
-				<a class = 'col-sm-4 blog-intro' href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{article.uri}}/'>
+				<div class = 'col-sm-4 blog-intro'>
 					<div class = 'information-text' id = '{% cycle 'left-top' 'middle-top' 'right-top' 'left-bottom' 'middle-bottom' 'right-bottom' %}' style = 'background: url({{request.scheme}}://{{ request.get_host }}/{{article.image}});background-size:cover;' >
 						<h4>{{article.title | safe}}</h4>
 						<p>
-							{{article.summary | safe}}
+							{{article.summary | safe}} <a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{article.uri}}/' style = 'color:#FFFFFF'>Read More</a>
 						</p>
 						<div class = 'posted-date'><h5>Posted: <medium>{{article.timestamp}}</medium></h5></div>
 					</div>
-				</a>
+				</div>
 			{% endfor %}
 		</div>
 		<div class = 'row'>

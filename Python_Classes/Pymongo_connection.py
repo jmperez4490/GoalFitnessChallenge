@@ -1,12 +1,10 @@
 from pymongo import MongoClient, DESCENDING
+from django.conf import settings
 
 class Pymongo_connection():
 	"""docstring for Pymongo_connection"""
 	def __init__(self):
-		try:
-			self.client = MongoClient('mongodb://localhost:27017')
-		finally:
-			self.client = MongoClient('mongodb://root:BTExjh5R@104.154.150.130:27017')
+		self.client = MongoClient(settings.MONGODB_CONFIG)
 
 	def search_database(self, collection, table, query, _limit = 1):
 		db = self.client[collection][table]

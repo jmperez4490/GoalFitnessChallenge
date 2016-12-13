@@ -126,3 +126,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
     )
+
+MONGODB_CONFIG = 'mongodb://localhost:27017' #'mongodb://root:BTExjh5R@104.154.150.130:27017'
+
+
+

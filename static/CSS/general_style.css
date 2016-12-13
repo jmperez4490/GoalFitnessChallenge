@@ -234,17 +234,17 @@ a
 	border-radius: 40px 40px 0 0px;
 }
 
-.information-text:hover
-{
-	background-image: none !important;
-	background-color: #666666 !important;
-}
 
 .information-text > h4
 {
 	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.information-text > p
+{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .article-title
 {
 	position:absolute;
