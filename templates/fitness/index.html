@@ -25,7 +25,28 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-6029882388187627",
+	    enable_page_level_ads: true
+	  });
+	</script>
 	{% endif %}
+	<link rel="apple-touch-icon" sizes="57x57" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="{{request.scheme}}://{{ request.get_host }}/static/Images/favicon/manifest.json">
 </head>
 <body>
 	<div class = 'container-fluid'>
@@ -60,78 +81,85 @@
 					</div>
 				</nav>
 				<img src="{% static "Images/JOSE.svg" %}" class = 'banner-image'>
-			</div>
-		</div>
-		<div class = 'row hidden-xs '>
-			<div class = 'col-sm-offset-1 col-sm-10'>
-				<div class = 'row'>
-					<div class = 'col-sm-offset-3 col-sm-6 center-view'>
-					Strive to be Fit, Set a Goal, and Challenge Yourself!!!
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-offset-1 col-sm-4 front-view left" style = 'background: url({% static "Images/exploration.svg" %}) no-repeat scroll 0 0 green'>
-						<div id = 'left'>Exploration</div>
-					</div>
-					<div class="col-sm-offset-2 col-sm-4 front-view">
-						<div>Nutrition</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-offset-1 col-sm-4 front-view">
-						<div>Motivation</div>
-					</div>
-					<div class="col-sm-offset-2 col-sm-4 front-view right" style = 'background: url({% static "Images/heartrate_monitor.svg" %}) repeat scroll 0 20px green'>
-						<div id = 'right'>Healthy Body</div>
-					</div>
+				<div class = 'search-box'>
+					<input type = 'text' class = 'form-control search-content' placeholder = "Search">
 				</div>
 			</div>
 		</div>
-		<div class = 'row visible-xs-block'>
-			<div class = 'col-sm-12'>
-				<div class = 'row'>
-					<div class = 'col-xs-offset-1 col-xs-10 front-view-xs'>
-					Strive to be Fit, Set a Goal, and Challenge Yourself!!!
+		<div class = 'content-box'>
+			<div class = 'row hidden-xs '>
+				<div class = 'col-sm-offset-1 col-sm-10'>
+					<div class = 'row'>
+						<div class = 'col-sm-offset-3 col-sm-6 center-view'>
+						Strive to be Fit, Set a Goal, and Challenge Yourself!!!
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-offset-2 col-xs-8 front-view-xs">
-						<div>Motivation</div>
+					<div class="row">
+						<div class="col-sm-offset-1 col-sm-4 front-view left" style = 'background: url({% static "Images/exploration.svg" %}) no-repeat scroll 0 0 green'>
+							<div id = 'left'>Exploration</div>
+						</div>
+						<div class="col-sm-offset-2 col-sm-4 front-view">
+							<div>Nutrition</div>
+						</div>
 					</div>
-				</div>
-				<div class = 'row'>
-					<div class="col-xs-offset-2 col-xs-8 front-view-xs">
-						<div>Nutrition</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-offset-2 col-xs-8 front-view-xs">
-						<div>Exploration</div>
-					</div>
-				</div>
-				<div class = 'row'>
-					<div class="col-xs-offset-2 col-xs-8 front-view-xs">
-						<div>Healthy Body</div>
+					<div class="row">
+						<div class="col-sm-offset-1 col-sm-4 front-view">
+							<div>Motivation</div>
+						</div>
+						<div class="col-sm-offset-2 col-sm-4 front-view right" style = 'background: url({% static "Images/heartrate_monitor.svg" %}) repeat scroll 0 20px green'>
+							<div id = 'right'>Healthy Body</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<h3 class = 'banner-headers'>
-			Articles
-		</h3>
-		<div class = 'row'>
-			{% for article in data%}
-				<div class = 'col-sm-4 blog-intro'>
-					<div class = 'information-text' id = '{% cycle 'left-top' 'middle-top' 'right-top' 'left-bottom' 'middle-bottom' 'right-bottom' %}' style = 'background: url({{request.scheme}}://{{ request.get_host }}/{{article.image}});background-size:cover;' >
-						<h4>{{article.title | safe}}</h4>
-						<p>
-							{{article.summary | safe}} <a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{article.uri}}/' style = 'color:#FFFFFF'>Read More</a>
-						</p>
-						<div style = 'display: none'>{{article.summary | safe}}</div>
-						<div class = 'posted-date'><h5>Posted: <medium>{{article.timestamp}}</medium></h5></div>
+			<div class = 'row visible-xs-block'>
+				<div class = 'col-sm-12'>
+					<div class = 'row'>
+						<div class = 'col-xs-offset-1 col-xs-10 front-view-xs'>
+						Strive to be Fit, Set a Goal, and Challenge Yourself!!!
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-8 front-view-xs">
+							<div>Motivation</div>
+						</div>
+					</div>
+					<div class = 'row'>
+						<div class="col-xs-offset-2 col-xs-8 front-view-xs">
+							<div>Nutrition</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-8 front-view-xs">
+							<div>Exploration</div>
+						</div>
+					</div>
+					<div class = 'row'>
+						<div class="col-xs-offset-2 col-xs-8 front-view-xs">
+							<div>Healthy Body</div>
+						</div>
 					</div>
 				</div>
-			{% endfor %}
+			</div>
+			<h3 class = 'banner-headers'>
+				Articles
+			</h3>
+			<div class = 'row'>
+				{% for article in data%}
+					<div class = 'col-sm-6 blog-intro'>
+						<div class = 'information-text' id = '{% cycle 'left-top' 'middle-top' 'right-top' 'left-bottom' 'middle-bottom' 'right-bottom' %}' style = 'background: url({{request.scheme}}://{{ request.get_host }}/{{article.image}});background-size:cover;' >
+							<h4>{{article.title | safe}}</h4>
+							<p>
+								{{article.summary | safe}} <a href = '{{request.scheme}}://{{ request.get_host }}/Articles/{{article.uri}}/' style = 'color:#FFFFFF'>Read More</a>
+							</p>
+							<div style = 'display: none'>{{article.summary | safe}}</div>
+							<div class = 'posted-date'><h5>Posted: <medium>{{article.timestamp}}</medium></h5></div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class = 'search-results'>
 		</div>
 		<div class = 'row'>
 			<div class = 'col-sm-12 footer'>

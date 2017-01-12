@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from Python_Classes.request_info import request_info
 import requests
+from django.http import JsonResponse
 
 db_connect = request_info()
 
@@ -36,5 +37,19 @@ def subscription(request):
 	else:
 		return redirect(_data['refferal_url']+"#error")
 
-def logIn(request):
-	return render(request, 'fitness/logIn.html', context)
+def log_in(request):
+	context = dict()
+	return render(request, 'competition/log_in.html', context)
+
+def profile(request):
+	context = dict()
+	return render(request, 'competition/user_profile.html', context)
+
+def dashboard(request):
+	context = dict()
+	return render(request, 'competition/dashboard.html', context)
+
+def search_input(request):
+	return JsonResponse(db_connect.get_search(request.GET.get('q','')))
+
+

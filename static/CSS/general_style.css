@@ -186,6 +186,8 @@ a
 .blog-intro
 {
 	margin-top:30px;
+	padding-left: 15px;
+    padding-right: 15px;
 }
 
 .information-text
@@ -275,8 +277,32 @@ a
 		margin-left: 2.5%;
 		float:left;
 	}
+
+	.box-input
+	{
+		position: relative !important;
+		margin-top: 20%;
+	}
+
+	.search-box > input
+	{
+		height: 30px !important;
+	}
 }
 
+.register-box, .recover-box
+{
+	display: none;
+}
+
+.box-input
+{
+	position:absolute;
+	top:20%;
+	background-color:#000000;
+	border-radius:15px;
+	padding:20px;opacity:.8
+}
 .article-list
 {
 	text-align:center;
@@ -337,4 +363,50 @@ a
 	width: 100%;
 	height: 50px;
 	margin-bottom: 20px;
+}
+
+.search-box
+{
+	opacity: 0.9; 
+	width: 60%; 
+	position: absolute; 
+	top: 50%; 
+	left: 20%; 
+	right: 20%;
+}
+
+.search-box > input
+{
+	height:50px;
+}
+
+.search-box >div > span
+{
+	width:50px;
+}
+
+.search-results
+{
+	margin-top:130px;
+
+}
+
+.search-response
+{
+	background-color: #FFFFFF;
+	width: 70%;
+	margin: 5px auto;
+	border-radius: 20px;
+	padding:15px;
+	text-decoration:none;
+	color:#000000;
+	font-size:12px;
+	border: 2px solid;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+
+blockquote > p, a
+{
+	font-size:12px;
 }

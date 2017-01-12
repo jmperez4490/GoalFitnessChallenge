@@ -48,3 +48,6 @@ class request_info:
 	def register_reader(self, information):
 		self.db.insert_record("Articles_List","Newsletter",information)
 
+	def get_search(self, input_text):
+		return self.db.query_search("Articles_List","Articles",input_text)
+
