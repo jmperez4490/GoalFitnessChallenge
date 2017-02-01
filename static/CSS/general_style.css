@@ -410,3 +410,42 @@ blockquote > p, a
 {
 	font-size:12px;
 }
+
+#label-color
+{
+	color: #FFFFFF;
+}
+
+.zip-code-info
+{
+	width: 150px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid;
+    display: none;
+}
+
+.glyphicon-info-sign
+{
+	cursor:pointer;
+}
+
+.contact
+{
+	width: 45%;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.email-contact
+{
+	width: 45%;
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}

@@ -47,6 +47,15 @@ $(function () {
 		}
 
 	});
+	$(".glyphicon-info-sign").click(function()
+	{
+		var info_box = $(".zip-code-info");
+		var _display = info_box[0].style.display;
+		if(_display == "" || _display == "none")
+			info_box.css({display:"block"});
+		else
+			info_box.css({display:"none"});
+	});
 });
 
 window.onscroll = function()

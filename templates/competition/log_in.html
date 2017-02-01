@@ -66,15 +66,15 @@
 				<img class = 'hidden-xs' src = '/static/Images/LOGO.svg'>
 				<div class = 'row'>
 					<div class = 'col-sm-offset-3 col-sm-6 col-xs-12 log-in-box box-input'>
-						<div class = 'form-horizontal'>
+						<div class = 'form-horizontal log-in'>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Email:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Email:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'email' name = 'user_email' class = 'form-control'>
 								</div>
 							</div>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Password:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Password:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'password' name = 'user_password' class = 'form-control'>
 								</div>
@@ -91,31 +91,43 @@
 					<div class = 'col-sm-offset-3 col-sm-6 col-xs-12 register-box box-input'>
 						<div class = 'form-horizontal'>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>First Name:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">First Name:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'text' name = 'first_name' class = 'form-control'>
 								</div>
 							</div>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Last Name:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Last Name:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'text' name = 'last_name' class = 'form-control'>
 								</div>
 							</div>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Email:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Email:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'email' name = 'user_email' class = 'form-control'>
 								</div>
 							</div>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Password:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Zip Code:</label>
+								<div class = 'col-sm-7'>
+									<input type = 'numeral' name = 'zipcode' class = 'form-control'>
+								</div>
+								<div class = 'col-sm-2'>
+									<span class = 'glyphicon glyphicon-info-sign btn' id = "label-color" ></span>
+									<div class = 'zip-code-info'>
+										Your ZipCode will be used to provide you with weather information and also recommend friends around you.
+									</div>
+								</div>
+							</div>
+							<div class = 'form-group'>
+								<label class = 'control-label col-sm-3' id = "label-color">Password:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'password' name = 'user_password' class = 'form-control'>
 								</div>
 							</div>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Re-Type Password:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Re-Type Password:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'password' name = 'conf_user_password' class = 'form-control'>
 								</div>
@@ -129,13 +141,13 @@
 					<div class = 'col-sm-offset-3 col-sm-6 col-xs-12 recover-box box-input'>
 						<div class = 'form-horizontal'>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Email:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Email:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'email' name = 'user_email' class = 'form-control'>
 								</div>
 							</div>
 							<div class = 'form-group'>
-								<label class = 'control-label col-sm-3' style = 'color:#FFFFFF'>Password:</label>
+								<label class = 'control-label col-sm-3' id = "label-color">Password:</label>
 								<div class = 'col-sm-9'>
 									<input type = 'password' name = 'user_password' class = 'form-control'>
 								</div>
