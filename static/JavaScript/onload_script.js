@@ -8,7 +8,7 @@ $(function () {
 			$(".content-box").css({display:"none"});
 			$('.banner-image').css({display:"none"});
 			$(".search-box").css({margin:"50px auto auto 0px"});
-			$.get("http://conquering.com:8000/search",{q:this.value},function(data)
+			$.get(window.location.href+"search",{q:this.value},function(data)
 			{
 				$.each(data, function(index, value)
 				{
@@ -19,7 +19,7 @@ $(function () {
 							<div class = 'col-xs-2'>
 								Title:
 							</div>
-							<a class = 'col-xs-10' href = 'http://conquering.com:8000/Articles/`+value.uri+`'>
+							<a class = 'col-xs-10' href = '`+window.location.href+`Articles/`+value.uri+`'>
 							`
 							+ value.title +
 							`
@@ -30,7 +30,7 @@ $(function () {
 								+ value.summary +
 								`
 								</p>
-								<a href = 'http://conquering.com:8000/Articles/`+value.uri+`'>Read More</a>
+								<a href = '`+window.location.href+`Articles/`+value.uri+`'>Read More</a>
 								<footer>Posted Date: <cite>` + value.timestamp.substring(0,10) + `</cite>
 								</footer>
 							</blockquote>
